@@ -1,11 +1,68 @@
-/* 
+/* --- LAYOUT PRINCIPAL --- */
+.contenedor-principal {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+h1 {
+    margin-bottom: 1em;
+}
 
-*/
+.contador {
+    color: rgb(179, 154, 154);
+}
+
+/* --- INPUT Y BOTÓN AGREGAR --- */
+input {
+    padding: 1em;
+    margin-right: 0.5em;
+    border-radius: 10px;
+}
+
+.btn-agregar {
+    border-color: #858585;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #858585;
+    color: white; 
+    transform: scale(1.1);
+}
+
+.caja-usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    margin: 1em auto;
+    padding: 0 1em;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.caja-usuario p {
+    margin: 1em 0; 
+}
+
+.btn-eliminar {
+    opacity: 0;         
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.caja-usuario:hover .btn-eliminar {
+    opacity: 1;      
+}
+
+.btn-eliminar:hover {
+    transform: scale(1.3); 
+}
